@@ -19,7 +19,11 @@ class AppKernel extends Kernel
             new JMS\SecurityExtraBundle\JMSSecurityExtraBundle(),
             new jazzyweb\AulasMentor\NotasFrontendBundle\JAMNotasFrontendBundle(),
             new jazzyweb\AulasMentor\NotasBackendBundle\JAMNotasBackendBundle(),
+<<<<<<< HEAD
             //new Symfony\Bundle\DoctrineFixturesBundle\DoctrineFixturesBundle(),
+=======
+            new Symfony\Bundle\DoctrineFixturesBundle\DoctrineFixturesBundle(),
+>>>>>>> bibucket/master
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {

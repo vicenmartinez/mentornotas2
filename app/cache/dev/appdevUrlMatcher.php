@@ -263,6 +263,7 @@ class appdevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
             return array (  '_controller' => 'jazzyweb\\AulasMentor\\NotasFrontendBundle\\Controller\\EstudioORMController::recuperarNotasAction',  '_route' => 'JAMN_ORM_recuperar_notas',);
         }
 
+<<<<<<< HEAD
         // jamn_EVF
         if ($pathinfo === '/estudio_valyforms/valida_usuario') {
             return array (  '_controller' => 'jazzyweb\\AulasMentor\\NotasFrontendBundle\\Controller\\EstudioValidacionYFormularioController::validaUsuarioAction',  '_route' => 'jamn_EVF',);
@@ -273,6 +274,8 @@ class appdevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
             return array (  '_controller' => 'jazzyweb\\AulasMentor\\NotasFrontendBundle\\Controller\\EstudioValidacionYFormularioController::formUsuarioAction',  '_route' => 'jamn_EVF_form_usuario',);
         }
 
+=======
+>>>>>>> bibucket/master
         throw 0 < count($allow) ? new MethodNotAllowedException(array_unique($allow)) : new ResourceNotFoundException();
     }
 }
